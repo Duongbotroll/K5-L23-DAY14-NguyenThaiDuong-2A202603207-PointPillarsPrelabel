@@ -7,7 +7,7 @@
 
 Ghi **trước** khi chạy `scripts/pp_sweep.py`, rồi commit và push ngay (lịch sử commit là bằng chứng thời điểm viết). Không sửa phần này sau khi có kết quả.
 
-- Tham số tôi nghĩ giảm công sửa nhiều nhất: min-score
+- Tham số tôi nghĩ giảm công sửa nhiều nhất: min_points
 - Vì sao (nhìn ảnh BEV tập A: box thừa nhiều hay box sót nhiều?): box thừa nhiềusss
 
 ## 2. Tập A: sửa tay và tune
