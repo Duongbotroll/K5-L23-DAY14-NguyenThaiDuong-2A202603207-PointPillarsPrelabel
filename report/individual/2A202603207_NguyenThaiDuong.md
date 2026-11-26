@@ -14,19 +14,24 @@ Ghi **trước** khi chạy `scripts/pp_sweep.py`, rồi commit và push ngay (l
 
 | Cấu hình | Xóa | Thêm | Sửa | Chi phí |
 |---|---:|---:|---:|---:|
-| Gốc | | | | |
-| `best_config.json` | | | | |
+| Gốc | 77 | 0 | 0 | 23.1 |
+| `best_config.json` | 14 | 4 | 0 | 8.2 |
 
-- Tham số đã đổi trong `best_config.json`: ...
-- Kết quả leave-one-out (dán các dòng `scripts/pp_sweep.py` in ra): ...
-- Cấu hình có ổn định trên từng frame không? Vì sao tôi vẫn chọn (hoặc không chọn) nó: ...
+- Tham số đã đổi trong `best_config.json`: `score_thr` 0.1 → 0.5 (`min_points` giữ 0).
+- Kết quả leave-one-out:
+s02f46: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 2.5 (tốt nhất có thể 2.5)
+s04f12: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 3.2 (tốt nhất có thể 2.8)
+s05f36: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 2.5 (tốt nhất có thể 2.5)
+- Cấu hình có chạy ổn trên từng frame
+
+- Cấu hình có ổn định trên từng frame không? Vì sao tôi vẫn chọn nó: <bạn tự viết 1–2 câu>
 
 ## 3. Trước/sau (bước 8)
 
-![so sánh](../../d14_<ID>/compare/<frame>.jpg)
+Ảnh so sánh: `<tên file>.jpg` (nộp riêng trên LMS, sinh bởi `scripts/pp_compare.py`).
 
-- `scripts/pp_compare.py` báo giảm (hoặc tăng) ...% công sửa trên tập A.
-- Dự đoán ở mục 1 đúng hay sai? Giải thích bằng số box xóa/thêm/sửa: ...
+- `scripts/pp_compare.py` báo giảm 65% công sửa trên tập A (chi phí 23.1 → 8.2; s02f46 10.5 → 2.5, s04f12 5.1 → 3.2, s05f36 7.5 → 2.5).
+- Dự đoán ở mục 1 đúng hay sai? Giải thích bằng số box xóa/thêm/sửa: mục 1 đúng, số box bị xóa khá nhiều vì không có điểm Lidar và đối chiếu với ảnh từ camera thì không có vật thể tương ứng 
 
 ## 4. Tập B
 
