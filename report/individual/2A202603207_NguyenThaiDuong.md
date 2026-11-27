@@ -28,7 +28,7 @@ s05f36: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 2.5 (tố
 
 ## 3. Trước/sau (bước 8)
 
-Ảnh so sánh: `<tên file>.jpg` (nộp riêng trên LMS, sinh bởi `scripts/pp_compare.py`).
+Ảnh so sánh: ![so sánh](../../d14_2A202603207/compare/s02f46.jpg)
 
 - `scripts/pp_compare.py` báo giảm 65% công sửa trên tập A (chi phí 23.1 → 8.2; s02f46 10.5 → 2.5, s04f12 5.1 → 3.2, s05f36 7.5 → 2.5).
 - Dự đoán ở mục 1 đúng hay sai? Giải thích bằng số box xóa/thêm/sửa: mục 1 đúng, số box bị xóa khá nhiều vì không có điểm Lidar và đối chiếu với ảnh từ camera thì không có vật thể tương ứng 
