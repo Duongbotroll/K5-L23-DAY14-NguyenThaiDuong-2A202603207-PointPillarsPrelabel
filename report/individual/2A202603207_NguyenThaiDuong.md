@@ -35,14 +35,14 @@ s05f36: cấu hình chọn {'score_thr': '0.5', 'min_points': '0'} → 2.5 (tố
 
 ## 4. Tập B
 
-Số đo từ `scripts/pp_prelabel.py --frames d14_<ID>/frames_B.txt --config d14_<ID>/best_config.json --gt d14_<ID>/ref_B.json`:
+Số đo từ `scripts/pp_prelabel.py --frames d14_2A202603207/frames_B.txt --config d14_2A202603207/best_config.json --gt d14_2A202603207/ref_B.json`:
 
 | Xóa | Thêm | Sửa | Chi phí |
 |---:|---:|---:|---:|
-| | | | |
+| 66 | 10 | 1 | 30.3 |
 
-- Loại box tốn công sửa nhất ở tập B: ...
-
+- Loại box tốn công sửa nhất ở tập B: box cyclist (người đi xe) vì nhãn đo phải đo bằng mắt thường khó nhất
 ## 5. Giới hạn
 
-- Nêu ít nhất 2 giới hạn (ví dụ: chỉ 3 frame tune; model KITTI không có Truck/Bus; chi phí là công thức, chưa phải thời gian sửa thật): ...
+- Nêu ít nhất 2 giới hạn (ví dụ: chỉ 3 frame tune; model KITTI không có Truck/Bus; chi phí là công thức, chưa phải thời gian sửa thật): 
++) 
